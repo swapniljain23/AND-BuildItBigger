@@ -23,9 +23,12 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <excludeFolder url="file://$MODULE_DIR$/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/build" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="JokesProvider" exported="" />
+    <orderEntry type="module" module-name="JokesProvider" exported="" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="endpoints-framework-2.0.9" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="javax.inject-1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="google-api-client-appengine-1.21.0" level="project" />
@@ -59,7 +62,6 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="joda-time-2.2" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="snakeyaml-1.12" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="transaction-api-1.1" level="project" />
-    <orderEntry type="library" exported="" scope="PROVIDED" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="PROVIDED" name="commons-logging-1.1.1" level="project" />
@@ -97,7 +99,6 @@
     <orderEntry type="library" exported="" scope="RUNTIME" name="joda-time-2.2" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="snakeyaml-1.12" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="transaction-api-1.1" level="project" />
-    <orderEntry type="library" exported="" scope="RUNTIME" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="commons-logging-1.1.1" level="project" />
@@ -135,7 +136,6 @@
     <orderEntry type="library" exported="" scope="TEST" name="joda-time-2.2" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="snakeyaml-1.12" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="transaction-api-1.1" level="project" />
-    <orderEntry type="library" exported="" scope="TEST" name="guava-jdk5-17.0" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="httpclient-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="httpcore-4.0.1" level="project" />
     <orderEntry type="library" exported="" scope="TEST" name="commons-logging-1.1.1" level="project" />

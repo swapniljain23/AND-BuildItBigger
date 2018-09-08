@@ -31,6 +31,17 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    flavorDimensions "version"
+
+    productFlavors {
+        free {
+            applicationId "com.swapniljain.builditbigger.free"
+        }
+        paid {
+            applicationId "com.swapniljain.buildbigger.paid"
+        }
+    }
 }
 
 dependencies {
@@ -38,7 +49,9 @@ dependencies {
     endpointsServer project(path: ':backend', configuration: 'endpoints')
     implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
     implementation 'com.google.android.gms:play-services-ads:11.8.0'
-    implementation 'com.google.api-client:google-api-client:1.23.0'
+    implementation ('com.google.api-client:google-api-client:1.23.0') {
+        exclude module: 'guava-jdk5'
+    }
     implementation 'com.google.http-client:google-http-client-android:1.23.0'
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
 
@@ -50,4 +63,5 @@ dependencies {
 
     implementation project(':JokesProvider')
     implementation project(':jokesactivities')
+    implementation project(':backend')
 }
