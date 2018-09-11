@@ -48,14 +48,20 @@ android {
     useLibrary 'android.test.base'
     useLibrary 'android.test.mock'
 
-    flavorDimensions "version"
+    flavorDimensions "default"
 
     productFlavors {
         free {
-            applicationId "com.swapniljain.builditbigger.free"
+            dimension "default"
+            applicationIdSuffix ".free"
+            versionNameSuffix "-free"
+            buildConfigField "String", "BUILD_VARIANT", "\"free\""
         }
         paid {
-            applicationId "com.swapniljain.buildbigger.paid"
+            dimension "default"
+            applicationIdSuffix ".paid"
+            versionNameSuffix "-paid"
+            buildConfigField "String", "BUILD_VARIANT", "\"paid\""
         }
     }
 }
@@ -74,7 +80,7 @@ dependencies {
     implementation 'com.google.code.findbugs:jsr305:3.0.1'
 
     androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude module: 'support-annotations'
     })
 
     testImplementation 'junit:junit:4.12'
